@@ -10,9 +10,9 @@ form.addEventListener('submit', async function (e) {
 })
 const content = document.querySelector('#rw')
 const makeImages = (shows) => {
+    content.innerHTML = "";
     document.body.classList.add("bg-gradient");
     for (let result of shows) {
-        // if (window.innerWidth >= 932 && shows.data.indexOf(result) === shows.data.length - 1) continue;
         if (result.show.image) {
             const divi = document.createElement('DIV');
             divi.className = "col-lg-4 col-md-6 col-sm-12";
